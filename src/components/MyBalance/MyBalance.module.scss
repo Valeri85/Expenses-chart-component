@@ -1,0 +1,28 @@
+.header {
+	display: grid;
+	grid:
+		'text logoLink'
+		'balance logoLink'
+		/ 80% 20%;
+	border-radius: var(--border-radius-400);
+	margin-bottom: 1em;
+	padding: 1em;
+	background-color: var(--clr-primary-400);
+	color: var(--clr-neutral-100);
+}
+
+.text {
+	grid-area: text;
+	color: var(--clr-neutral-200);
+}
+
+.balance {
+	grid-area: balance;
+	font-size: var(--font-size-h2);
+	font-weight: var(--font-weight-700);
+}
+
+.logoLink {
+	grid-area: logoLink;
+	place-self: center;
+}

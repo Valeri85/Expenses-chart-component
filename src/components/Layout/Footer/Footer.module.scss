@@ -1,0 +1,21 @@
+@use '../../../assets/styles/helpers/_mixins.scss' as *;
+
+.footer {
+	margin-top: auto;
+	padding: 0.5em;
+	text-align: center;
+}
+
+.text {
+	display: block;
+}
+
+.frontEndMentorLink {
+	color: var(--clr-secondary-100);
+	text-decoration: underline;
+	transition: color var(--animation-time) ease-in-out;
+	&:hover {
+		color: var(--clr-primary-400);
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,44 @@
+:root {
+	/* Background Colors */
+	--clr-primary-300: hsl(186, 34%, 60%);
+	--clr-primary-400: hsl(10, 79%, 65%);
+	// --clr-secondary-100: ;
+	--clr-neutral-100: hsl(33, 100%, 98%);
+	--clr-neutral-200: hsl(27, 66%, 92%);
+	--clr-neutral-300: hsl(28, 10%, 53%);
+	--clr-neutral-400: hsl(25, 47%, 15%);
+
+	/* Hovers */
+	--hover: hsl(10, 79%, 80%);
+	--hover-max: hsl(186, 34%, 75%);
+
+	/* Shadows */
+	// --shadow: 0 5px 5px 0 hsl(0 0% 0% / 0.15);
+
+	/* Responsive Paddings */
+	// --padding: ;
+
+	/* Border Radiuses */
+	--border-radius-300: 0.2em;
+	--border-radius-400: 0.5em;
+
+	/* Font Families */
+	--font-family-primary: 'DM Sans', sans-serif;
+	// --font-family-secondary: ;
+
+	/* Font Sizes */
+	--font-size-body: clamp(1.6rem, 1.5091rem + 0.2424vw, 1.8rem);
+	--font-size-h1: clamp(2.5rem, 1.8182rem + 1.8182vw, 4rem);
+	--font-size-h2: clamp(2.5rem, 2.2727rem + 0.6061vw, 3rem);
+	--font-size-h3: clamp(2.4rem, 2.2182rem + 0.4848vw, 2.8rem);
+	--font-size-total: clamp(3rem, 2.6136rem + 1.0303vw, 3.85rem);
+	// --font-size-text: ;
+
+	/* Font Weights */
+	--font-weight-400: 400;
+	// --font-weight-600: 600;
+	--font-weight-700: 700;
+
+	/* Animations */
+	--animation-time: 500ms;
+}

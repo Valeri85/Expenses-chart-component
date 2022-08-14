@@ -1,0 +1,29 @@
+.tooltip {
+	position: absolute;
+	inset: 0 auto auto 0;
+	padding: 0.25em;
+	background-color: var(--clr-neutral-400);
+	border-radius: var(--border-radius-300);
+	font-size: 1.5rem;
+	color: var(--clr-neutral-100);
+	z-index: 1;
+	transform: translate(-16.5%, -115%);
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: block;
+	animation: fade-in var(--animation-time) ease-in;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

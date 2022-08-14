@@ -1,0 +1,12 @@
+.chartItem {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	height: 100%;
+}
+
+.day {
+	margin-top: 0.5em;
+	font-size: 1.2rem;
+}

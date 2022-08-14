@@ -1,0 +1,22 @@
+.chartBar,
+.maxAmount {
+	transition: background-color var(--animation-time) ease-out;
+}
+
+.chartBar {
+	position: relative;
+	width: max(3vw, 2em);
+	background-color: var(--clr-primary-400);
+	border-radius: var(--border-radius-300);
+	cursor: pointer;
+	&:hover {
+		background-color: var(--hover);
+	}
+}
+
+.maxAmount {
+	background-color: var(--clr-primary-300);
+	&:hover {
+		background-color: var(--hover-max);
+	}
+}
