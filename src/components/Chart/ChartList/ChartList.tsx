@@ -11,7 +11,7 @@ import classes from './ChartList.module.scss';
 
 export const ChartList: FC = () => {
 	const [data, loading, error] = useFetch<dataModel[]>(
-		'../../src/assets/data/data.json'
+		'src/assets/data/data.json'
 	);
 
 	const maxAmount = data?.reduce(
