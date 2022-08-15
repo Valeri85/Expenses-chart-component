@@ -10,7 +10,7 @@ export const Tooltip: FC<TooltipProps> = props => (
 		className={`${classes.tooltip} ${
 			props.isShown ? classes.show : classes.hide
 		}`}
-		id="tooltip"
+		id={props.id}
 		value={props.amount}
 		aria-hidden={props.isShown ? false : true}
 	>

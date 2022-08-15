@@ -1,5 +1,5 @@
 /* Importing the React Function Component type. */
-import { useState, FC, MouseEvent, AnimationEvent } from 'react';
+import { useState, FC, MouseEvent, AnimationEvent, useId } from 'react';
 // Component
 import { Tooltip } from '../../Tooltip/Tooltip';
 // Types
@@ -10,6 +10,7 @@ import classes from './ChartBar.module.scss';
 export const ChartBar: FC<ChartBarProps> = props => {
 	const [hovered, setHovered] = useState(false);
 	const [animationEnd, setAnimationEnd] = useState(false);
+	const id = useId();
 
 	const mouseOverHandler = () => setHovered(true);
 
@@ -27,9 +28,9 @@ export const ChartBar: FC<ChartBarProps> = props => {
 			onMouseOver={mouseOverHandler}
 			onMouseLeave={mouseLeaveHandler}
 			onAnimationEnd={animationEndHandler}
-			aria-describedby="#tooltip"
+			aria-describedby={id}
 		>
-			<Tooltip isShown={hovered} amount={props.amount} />
+			<Tooltip id={id} isShown={hovered} amount={props.amount} />
 		</div>
 	);
 };
