@@ -5,14 +5,12 @@ import { ChartItem } from '../ChartItem/ChartItem';
 // Hook
 import { useFetch } from '../../../hooks/useFetch';
 // Types
-import { dataModel } from '../../../assets/data/data.model';
+import { dataModel } from '../../../../public/data/data.model';
 // Classes
 import classes from './ChartList.module.scss';
 
 export const ChartList: FC = () => {
-	const [data, loading, error] = useFetch<dataModel[]>(
-		'src/assets/data/data.json'
-	);
+	const [data, loading, error] = useFetch<dataModel[]>('./data/data.json');
 
 	const maxAmount = data?.reduce(
 		(currAmount, expensesArray) =>
