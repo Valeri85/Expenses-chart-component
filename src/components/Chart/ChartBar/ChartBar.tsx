@@ -11,14 +11,11 @@ export const ChartBar: FC<ChartBarProps> = props => {
 	const [hovered, setHovered] = useState(false);
 	const [animationEnd, setAnimationEnd] = useState(false);
 
-	const mouseOverHandler = (_: MouseEvent<HTMLDivElement> | null) =>
-		setHovered(true);
+	const mouseOverHandler = () => setHovered(true);
 
-	const mouseLeaveHandler = (_: MouseEvent<HTMLDivElement> | null) =>
-		setHovered(false);
+	const mouseLeaveHandler = () => setHovered(false);
 
-	const animationEndHandler = (_: AnimationEvent<HTMLDivElement> | null) =>
-		setAnimationEnd(true);
+	const animationEndHandler = () => setAnimationEnd(true);
 
 	return (
 		<div
