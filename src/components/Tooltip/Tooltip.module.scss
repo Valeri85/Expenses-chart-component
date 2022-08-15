@@ -1,13 +1,18 @@
+@use '../../assets/styles/helpers/mixins' as *;
+@use '../../assets/styles/helpers/functions' as *;
+
 .tooltip {
 	position: absolute;
-	inset: 0 auto auto 0;
+	inset: em(-38) auto auto em(-11.5);
 	padding: 0.25em;
 	background-color: var(--clr-neutral-400);
 	border-radius: var(--border-radius-300);
 	font-size: 1.5rem;
 	color: var(--clr-neutral-100);
 	z-index: 1;
-	transform: translate(-16.5%, -115%);
+	@include large-screen {
+		inset: em(-39) auto auto em(-3.5);
+	}
 }
 
 .hide {
